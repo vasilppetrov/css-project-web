@@ -1,0 +1,148 @@
+
+main{
+    padding-top:2rem;
+    margin-top: 2.5rem;
+}
+
+.background{
+    background: url("../images/plans-background.jpg") center/cover;
+    filter: grayscale(40%); 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+
+
+.main-plans{
+    border: 4px  solid #0e4f1f;
+    margin: 1rem 0;
+    width: 80%;
+    border-left: none; 
+    position: relative;
+    overflow: hidden;
+}
+
+.main-plans:hover,
+.main-plans:active{
+    border-color:#ff5454;
+    box-shadow: 2px 2px 4px rgb(0,0,0,0.5);
+    animation: push 1s ease-out forwards;
+}
+
+.main-plans a{ 
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem;
+}
+
+.main-plna-title{
+    color:black;
+}
+
+.main-plans h2{
+    color:#979797;
+}
+
+.main-plan-discr{
+    background: white;
+    border: 1px solid #0e4f1f;
+    color: #0e4f1f;
+    padding: 1rem;
+    font-size:1.25rem;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 700;
+    text-shadow: 2px 2px 7px rgba(148, 146, 146, 0.918)
+
+}
+
+.main-plans-highlight h1 {
+     color: white;
+}
+
+.main-plans-highlight h2{
+    color:#bbb;
+}
+
+
+#plus{
+    background: rgb(213,255,220,0.95);  
+}
+
+#free{
+    background: rgb(234,252,237,0.95);
+    float: right;
+    border-right: none;
+    border-left:4px solid #0e4f1f;
+    text-align: right;  
+    
+}
+
+#free:hover,
+#free:active{
+  border-left-color: #ff5454;
+  border-right-color: #ff5454;
+}
+
+.main-plans-highlight{
+    background: rgb(14,79,31,0.95 )
+}
+
+.clearfix{
+    clear: both;
+}
+
+ .main-plans .main-badge{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 0;
+    color: white;
+    font-size: 0.75rem;
+    background: #ff5454;
+    padding: 0.5rem;
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    transform-origin: center;
+    width: 12rem;
+    text-align: center;
+}
+
+.main-header{   
+    /* margin-top: -46px; */
+}
+
+@media(min-width:40rem){
+   
+    main{
+        margin: 0 auto;
+        max-width: 1500px;
+        margin-top: 2.5rem;
+    }
+    
+  
+
+}
+
+
+@media(min-width:1500px){
+    .main-plans{
+        border-left:4px  solid #0e4f1f;
+    }
+
+    #free{
+        border-right: 4px  solid #0e4f1f;
+    }
+}
+
+
+@keyframes push{
+    0%{
+       transform: translateY(0)
+    }
+    100%{
+        transform: translateY(-1rem)
+     }
+    
+}
